@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.texto {
+    font-size: 150px;
+    font-weight: bolder;
+    text-transform: uppercase; 
+
+    background: linear-gradient(45deg , #0fc0c9 , #f95af3,#2a9d8e, #16d7e1);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+
+    /*Comando para aplcar o efeito de degradê sobre o texto*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    outline: none;
+}
+
+
+@keyframes degrade {
+    0% {
+        background-position-x:0% ;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+/*O comando que permite que o texto na tela seja editável foi usado na div no arquivo inde.html, e o comando fica após o nome da tag div: contenteditable="true"*/
