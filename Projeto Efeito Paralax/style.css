@@ -11,7 +11,7 @@ section {
     background-repeat: no-repeat;/*para que a imagem nao se repita na seção*/
     background-size: cover; /*para cobrir toda a area da seção*/
 
-    background-attachment: fixed;
+    background-attachment: fixed; /*deixar as imagens fixas na hora da rolagem*/
 }
 
 section:nth-of-type(1){/*usando um pseudo-elmento, sewlecione o primeiro elemento que tenha a tag section*/
